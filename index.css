@@ -142,12 +142,45 @@ a{
   }
 }
 .card{
-  background-color: #232323;
+  /* background-color: #232323; */
   width: 150px;
   border-radius: 0.5rem;
   padding: 1rem;
   margin-left: 1.5rem;
   margin-top: 1rem;
+  position: relative;
+}
+.card:hover{
+  background-color: #232323;
+  transform: scale(1.1);
+  transition: .4s;
+}
+.card:hover .plybtn{
+  opacity: 1;
+  top: 110px;
+  
+}
+.plybtn:hover{
+  transform: scale(1.1);
+}
+.plybtn{
+  position: absolute;
+  background-color:  #1bd760;;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 120px;
+  right: 20px;
+  opacity: 0;
+  transition: .4s;
+  cursor: pointer;
+  >i{
+    font-size: 25px;
+    color: #000;
+  }
 }
 .cards-container{
   display: flex;
